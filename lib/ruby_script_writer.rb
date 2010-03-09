@@ -44,24 +44,6 @@ class RubyScriptWriter
     comment 'coding: ', coding
   end
   
-  def put_description(thing_being_described)
-    puts "describe ", thing_being_described, " do"
-    indent
-    yield self
-    outdent
-    puts "end"
-    puts
-  end
-  
-  def put_spec(specficiation_in_words)
-    puts "it ",specficiation_in_words.inspect, " do"
-    indent
-    yield self
-    outdent
-    puts "end"
-    puts
-  end
-  
   def comment(*args)
     puts "# ", *args
   end
