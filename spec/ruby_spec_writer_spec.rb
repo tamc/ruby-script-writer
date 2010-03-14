@@ -16,7 +16,7 @@ describe RubySpecWriter do
     r.put_spec "a1 should be equal to b2" do
       r.puts "a1.should == b2"
     end
-    r.to_s.should == "it \"a1 should be equal to b2\" do\n  a1.should == b2\nend\n\n"
+    r.to_s.should == "it 'a1 should be equal to b2' do\n  a1.should == b2\nend\n\n"
   end
   
 end
