@@ -11,7 +11,7 @@ class RubySpecWriter < RubyScriptWriter
   end
   
   def put_spec(specficiation_in_words)
-    puts "it '",specficiation_in_words, "' do"
+    puts "it '",specficiation_in_words.tr("'",""), "' do"
     indent
     yield self
     outdent
