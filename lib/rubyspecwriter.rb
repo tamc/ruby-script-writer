@@ -1,4 +1,4 @@
-require 'ruby_script_writer'
+require 'rubyscriptwriter'
 
 class RubySpecWriter < RubyScriptWriter
   def put_description(thing_being_described)
