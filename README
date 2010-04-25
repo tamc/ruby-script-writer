@@ -1,6 +1,6 @@
-= Ruby-script-writer
+= RubyScriptWriter
 
-Ruby-script-writer helps programatically create new ruby scripts:
+RubyScriptWriter helps programatically create new ruby scripts:
 
 r = RubyScriptWriter.new
 r.put_class "One" do
