@@ -1,3 +1,5 @@
+require 'stringio'
+
 class RubyScriptWriter
   attr_reader :r
   

@@ -1,6 +1,24 @@
 = Ruby-script-writer
 
-Ruby-script-writer helps programatically create new ruby scripts.
+Ruby-script-writer helps programatically create new ruby scripts:
+
+r = RubyScriptWriter.new
+r.put_class "One" do
+  r.put_method "a", "arg1","arg2" do
+    r.puts "return arg1 + arg2"
+  end
+end
+puts r
+
+class One
+  def a(arg1,arg2)
+    return arg1 + arg2
+  end
+
+end
+
+It can be installed as a gem:
+gem install rubyscriptwriter
 
 This software is (c) 2010 Green on Black Ltd and distributed under the open source MIT[http://www.opensource.org/licenses/mit-license.php] licence. (See LICENCE for the wording).
 
