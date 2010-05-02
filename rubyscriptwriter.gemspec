@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rubyscriptwriter"
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.author = "Thomas Counsell, Green on Black Ltd"
   s.email = "ruby-script-writer@greenonblack.com"
   s.homepage = "http://wiki.github.com/tamc/ruby-script-writer"

@@ -17,7 +17,7 @@ class RubyScriptWriter
   end
   
   def put_class(class_name,superclass_name = nil)
-    puts "class ", class_name, superclass_name && " < ", superclass_name
+    puts "class #{class_name}#{ superclass_name && " < #{superclass_name}"}"
     indent
     yield self
     outdent
@@ -26,7 +26,7 @@ class RubyScriptWriter
   end
   
   def put_simple_method(method_name,*method_code)
-    puts "def ", method_name,"; ",*method_code.join,"; end"
+    puts "def " + method_name + "; " + method_code.join + "; end"
   end
   
   def put_method(method_name,*arguments)
